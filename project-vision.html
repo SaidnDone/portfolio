@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Project Vision</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h2 {
+            color: #004080;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+
+     <!-- Navigation Links -->
+    <nav>
+        <ul>
+            <li><a href="capstone.html">Capstone Directory</a></li>
+            <li><a href="project-summary.html">Project Summary</a></li>
+            <li><a href="project-requirements.html">Project/Business Requirements</a></li>
+            <li><a href="project-plan.html">Project Plan</a></li>
+            <li><a href="project-vision.html">Project Vision</a></li>
+            <li><a href="https://www.figma.com/file/ABbvMutsd9oex4mnQLYFVC/ChatBot-IO-Fitness-Web-App?type=design&node-id=3%3A342&mode=design&t=sEhaH3geC2gLp1Sa-1">Wireframes/Mock ups</a></li>
+            <li><a href="status-reports.html">Status Reports</a></li>
+            <li><a href="https://github.com/SaidnDone/Capstone_Raptors_Fitness">System Implementation</a></li>
+        </ul>
+    </nav>
+
+
+    <h2>Chatbot Enabled Fitness Center Web App<br>Project Vision Document<br>Version 1.0<br>9/30/2023</h2>
+
+
+    </table>
+
+    <h2>Table of Contents</h2>
+    <ol>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#positioning">Positioning</a></li>
+        <li><a href="#stakeholder-user">Stakeholder and User Descriptions</a></li>
+        <li><a href="#stakeholder-requirements">Stakeholder Requirements</a></li>
+        <li><a href="#system-features">System Features</a></li>
+        <li><a href="#assumptions">Assumptions</a></li>
+        <li><a href="#constraints">Constraints</a></li>
+    </ol>
+
+    <!-- Introduction -->
+<section id="introduction">
+    <h3>1. Introduction</h3>
+
+    <p>We create a chatbot to analyze and give recommendations on potential and current clients’ fitness and/or weight-loss goals.</p>
+
+    <h4>Purpose</h4>
+    <p>To give clients recommendations and instructions on how to achieve their fitness and weight-loss goals.</p>
+
+    <h4>Scope</h4>
+    <p>A website that has a questionnaire for users to fill out and give an analysis based on their input.</p>
+
+    <h5>In Scope</h5>
+    <ul>
+        <li>Creation of gym website</li>
+        <li>Questionnaire</li>
+        <li>AI implementation to analyze questionnaire</li>
+    </ul>
+
+    <h5>Out of Scope</h5>
+    <ul>
+        <li>Sourcing gym equipment</li>
+        <li>Advertising</li>
+    </ul>
+
+    <h4>Definitions, Acronyms, and Abbreviations</h4>
+    <p>Chatbot, AI, fitness, weight-loss, plan, gym</p>
+
+    <h4>References</h4>
+    <table>
+        <tr>
+            <th>Reference File Name</th>
+            <th>Version</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Project Summary</td>
+            <td>1.0</td>
+            <td>Summary of goals and features for ChatBotIO</td>
+        </tr>
+    </table>
+</section>
+
+
+    <!-- Positioning -->
+<section id="positioning">
+    <h3>2. Positioning</h3>
+
+    <h4>Business Opportunity</h4>
+    <p>By leveraging AI-driven analysis of user questionnaire results, there's an opportunity to attract more potential clients to the fitness center. Personalized recommendations can significantly enhance user satisfaction and commitment.</p>
+
+    <h4>Problem Statement</h4>
+
+    <table>
+        <tr>
+            <th>The Problem of</th>
+            <th>Individuals keen on health and fitness often struggle due to a lack of proper guidance or not witnessing desired results.</th>
+        </tr>
+        <tr>
+            <th>Affects</th>
+            <th>Potential clients of the fitness center</th>
+        </tr>
+        <tr>
+            <th>The Impact of Which Is</th>
+            <th>With proper guidance, many can embark on a more structured and effective fitness journey.</th>
+        </tr>
+        <tr>
+            <th>A Successful Solution Would Be</th>
+            <th>An AI-driven analysis of user-filled questionnaires, providing clear instructions tailored to individual fitness goals.</th>
+        </tr>
+    </table>
+
+    <h4>Product Position Statement</h4>
+
+    <ul>
+        <li><strong>For:</strong> People interested in fitness and weight-loss</li>
+        <li><strong>Who:</strong> Individuals keen on fitness and weight-loss who lack proper guidance, the ChatBotIO website, equipped with an AI-driven chatbot, will offer personalized instructions to achieve their fitness goals.</li>
+        <li><strong>The <product name> website with chatbot:</strong> Will give people clear instructions on how to achieve their fitness goals</li>
+        <li><strong>Unlike:</strong> Unlike other gyms that primarily showcase pricing and locations, our platform provides tailored advice based on individual user responses.</li>
+        <li><strong>Our product:</strong> After filling out the questionnaire, an AI will analyze each user’s results and give guidance on how to achieve their fitness goals.</li>
+    </ul>
+</section>
+
+
+    <!-- Stakeholder and User Descriptions -->
+<section id="stakeholder-user">
+    <h3>3. Stakeholder and User Descriptions</h3>
+
+    <p>This section provides a profile of the stakeholders and users involved in the project, and the key problems that they perceive to be addressed by the proposed solution. It does not describe their specific requests or requirements as these are captured in a separate stakeholder requests artifact. Instead, it provides the background and justification for why the requirements are needed.</p>
+
+    <!-- Stakeholder Summary -->
+    <h4>Stakeholder Summary</h4>
+
+    <table>
+        <tr>
+            <th>Stakeholder Name</th>
+            <th>Represents</th>
+            <th>Role</th>
+        </tr>
+        <tr>
+            <td>Said Mohamed</td>
+            <td>Delegation role helping with the development of ChatBotIO</td>
+            <td>Helps with the distribution of work and implementation of features of the project</td>
+        </tr>
+        <tr>
+            <td>Raptors Fitness Center</td>
+            <td>Sponsor and financier of the project</td>
+            <td>Provides finances and input towards the functions and outcomes expected of the project</td>
+        </tr>
+        <tr>
+            <td>Customers</td>
+            <td>A user of ChatBotIO</td>
+            <td>A user of ChatBotIO that will give their opinion on the project</td>
+        </tr>
+    </table>
+
+    <!-- User Summary -->
+    <h4>User Summary</h4>
+
+    <table>
+        <tr>
+            <th>User Name</th>
+            <th>Description</th>
+            <th>Responsibilities</th>
+            <th>Stakeholder</th>
+        </tr>
+        <tr>
+            <td>@IGetFit</td>
+            <td>A 23-year-old male aiming to lose belly fat and maintain fitness.</td>
+            <td>- Track diet - Maintain a calorie deficit or avoid high-carb foods</td>
+            <td>Personal Trainer or Fitness Coach</td>
+        </tr>
+        <tr>
+            <td>@HealthyMom</td>
+            <td>A 35-year-old working mother striving for a balanced lifestyle.</td>
+            <td>- Plan and track family meals - Incorporate regular exercise</td>
+            <td>Family or Spouse</td>
+        </tr>
+        <tr>
+            <td>@GymEnthusiast</td>
+            <td>A fitness enthusiast in their 30s, focused on muscle gain.</td>
+            <td>- Design and follow a structured workout routine - Monitor protein intake</td>
+            <td>Personal Trainer</td>
+        </tr>
+        <tr>
+            <td>@SeniorWellness</td>
+            <td>An active 65-year-old looking to maintain overall health.</td>
+            <td>- Track daily physical activities - Monitor vital signs (e.g., blood pressure)</td>
+            <td>Healthcare Provider</td>
+        </tr>
+    </table>
+</section>
+
+
+    <!-- Stakeholder Requirements -->
+<section id="stakeholder-requirements">
+    <h3>4. Stakeholder Requirements</h3>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Requirement</th>
+            <th>Stakeholder</th>
+        </tr>
+        <tr>
+            <td>REQ1</td>
+            <td>The system must support user registration and login.</td>
+            <td>System User (SU)</td>
+        </tr>
+        <tr>
+            <td>REQ2</td>
+            <td>The system must provide a user-friendly interface.</td>
+            <td>System User (SU)</td>
+        </tr>
+        <tr>
+            <td>REQ3</td>
+            <td>The system must securely store user data.</td>
+            <td>System User (SU)</td>
+        </tr>
+        <tr>
+            <td>REQ4</td>
+            <td>The application should offer personalized workout plans.</td>
+            <td>System User (SU)</td>
+        </tr>
+        <tr>
+            <td>REQ5</td>
+            <td>The system should track user progress over time.</td>
+            <td>System User (SU)</td>
+        </tr>
+    </table>
+</section>
+
+
+    <!-- System Features -->
+<section id="system-features">
+    <h3>5. System Features</h3>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Feature</th>
+            <th>Stakeholder Requirement ID</th>
+        </tr>
+        <tr>
+            <td>F1</td>
+            <td>User Registration and Login</td>
+            <td>REQ1</td>
+        </tr>
+        <tr>
+            <td>F2</td>
+            <td>User-Friendly Interface</td>
+            <td>REQ2</td>
+        </tr>
+        <tr>
+            <td>F3</td>
+            <td>Secure Data Storage</td>
+            <td>REQ3</td>
+        </tr>
+        <tr>
+            <td>F4</td>
+            <td>Personalized Workout Plans</td>
+            <td>REQ4</td>
+        </tr>
+        <tr>
+            <td>F5</td>
+            <td>Progress Tracking</td>
+            <td>REQ5</td>
+        </tr>
+        <tr>
+            <td>F6</td>
+            <td>Nutrition Tracking and Recommendations</td>
+            <td>REQ6</td>
+        </tr>
+    </table>
+</section>
+
+
+    <!-- Assumptions -->
+<section id="assumptions">
+    <h3>6. Assumptions</h3>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Assumption</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Users will have access to the internet for registration and login.</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Users will provide accurate and valid information during the registration process.</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Users will use the system to track their progress consistently.</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Data storage compliance with relevant data protection regulations is assumed.</td>
+        </tr>
+    </table>
+</section>
+
+
+    <!-- Constraints -->
+<section id="constraints">
+    <h3>7. Constraints</h3>
+
+    <ul>
+        <li>1. The development team must adhere to the allocated budget.</li>
+        <li>2. The system should be compatible with common web browsers and mobile devices.</li>
+        <li>3. Compliance with data privacy regulations, such as GDPR or HIPAA, must be maintained.</li>
+        <li>4. System development should be completed within the specified timeframe.</li>
+        <li>5. Availability of third-party APIs for personalized workout plans and nutritional recommendations may be a constraint.</li>
+    </ul>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Said Mohamed. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

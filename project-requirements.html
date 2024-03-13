@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Project/Business Requirements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h2 {
+            color: #004080;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Links -->
+    <nav>
+        <ul>
+            <li><a href="capstone.html">Capstone Directory</a></li>
+            <li><a href="project-summary.html">Project Summary</a></li>
+            <li><a href="project-requirements.html">Project/Business Requirements</a></li>
+            <li><a href="project-plan.html">Project Plan</a></li>
+            <li><a href="project-vision.html">Project Vision</a></li>
+            <li><a href="https://www.figma.com/file/ABbvMutsd9oex4mnQLYFVC/ChatBot-IO-Fitness-Web-App?type=design&node-id=3%3A342&mode=design&t=sEhaH3geC2gLp1Sa-1">Wireframes/Mock ups</a></li>
+            <li><a href="status-reports.html">Status Reports</a></li>
+            <li><a href="https://github.com/SaidnDone/Capstone_Raptors_Fitness">System Implementation</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Project Requirements</h1>
+    </header>
+
+    <!-- Table of Contents -->
+    <section id="table-of-contents">
+        <h2>TABLE OF CONTENTS</h2>
+        <ol>
+            <li><a href="#business-context-diagram">BUSINESS CONTEXT DIAGRAM</a></li>
+            <li><a href="#requirement-scope-statements">REQUIREMENTS SCOPE STATEMENTS</a></li>
+            <li><a href="#hlr-sign-off">HIGH LEVEL BUSINESS REQUIREMENTS SIGN-OFF</a></li>
+        </ol>
+    </section>
+
+    <!-- Business Context Diagram -->
+    <section id="business-context-diagram">
+        <h2>1. BUSINESS CONTEXT DIAGRAM</h2>
+        <img src="context-diagram.jpg" alt="Dataflow-diagram" width="1200" height="700">
+
+        <!-- Requirement Scope Area -->
+    <div>
+        <h3>Requirement Scope Area</h3>
+        <p>
+            This scope area focuses on the operations and management of Raptors Fitness as a physical fitness center.
+            It includes activities related to facility management, staff coordination, equipment maintenance, and customer
+            service within the physical fitness center.
+        </p>
+    </div>
+
+    <!-- External Entities -->
+    <div>
+        <h3>External Entity</h3>
+        <ul>
+            <li>
+                <strong>Fitness Center Staff:</strong> Represents the employees and personnel who work within the
+                physical fitness center. This includes fitness trainers, front desk staff, cleaning and maintenance crew,
+                and any other employees directly involved in the day-to-day operations of the fitness center.
+            </li>
+            <li>
+                <strong>Fitness Equipment Suppliers:</strong> External vendors or companies that provide fitness
+                equipment and supplies to the Raptors Fitness center. They deliver and maintain exercise machines, weights,
+                fitness accessories, and other equipment needed to keep the fitness center well-equipped and up-to-date.
+            </li>
+            <li>
+                <strong>Cleaning and Maintenance Services:</strong> External providers responsible for cleaning and
+                maintaining the fitness center's facilities. They perform routine cleaning, repair, and maintenance tasks
+                to ensure a safe and hygienic environment for members. This includes tasks such as equipment maintenance,
+                restroom cleaning, and facility repairs.
+            </li>
+            <li>
+                <strong>Fitness Class Instructors:</strong> External individuals or contractors who lead fitness classes
+                and training sessions within the fitness center. They have expertise in various fitness disciplines, such
+                as yoga, aerobics, or martial arts, and conduct scheduled classes to help members achieve their fitness
+                goals.
+            </li>
+            <li>
+                <strong>Health and Safety Inspectors:</strong> External professionals or regulatory authorities
+                responsible for ensuring compliance with health and safety standards within the fitness center. They
+                conduct inspections, review safety protocols, and provide recommendations to ensure the fitness center's
+                facilities and practices meet safety and health regulations, ensuring member well-being.
+            </li>
+        </ul>
+    </div>
+
+    <!-- Information Flows -->
+    <div>
+        <h3>Information Flows</h3>
+        <ul>
+            <li>
+                <strong>Equipment Maintenance Requests:</strong> Raptors Fitness staff (Fitness Center Staff)
+                communicate maintenance and repair requests to external Fitness Equipment Suppliers. These requests include
+                details about the specific equipment requiring attention, such as model numbers and issue descriptions.
+            </li>
+            <li>
+                <strong>Cleaning and Maintenance Reports:</strong> Cleaning and Maintenance Services submit weekly
+                reports to Raptors Fitness management. These reports outline the cleaning and maintenance activities
+                performed within the fitness center during the week. Reports may include details about tasks completed,
+                equipment inspected, and repairs made.
+            </li>
+            <li>
+                <strong>Fitness Class Schedule Updates:</strong> Raptors Fitness management provides updates to Fitness
+                Class Instructors regarding changes to the fitness class schedule. This communication ensures that
+                instructors are aware of class additions, cancellations, or rescheduling.
+            </li>
+            <li>
+                <strong>Safety Inspection Findings:</strong> Health and Safety Inspectors communicate their inspection
+                findings to Raptors Fitness management. These findings detail any safety and compliance issues discovered
+                during inspections and may include recommendations for corrective actions.
+            </li>
+            <li>
+                <strong>Member Assistance Requests:</strong> Raptors Fitness members can request assistance from Fitness
+                Center Staff. These requests may include seeking guidance on how to use specific exercise machines,
+                requesting information about fitness classes, or seeking general assistance within the fitness center.
+            </li>
+            <li>
+                <strong>Member Feedback and Suggestions:</strong> Raptors Fitness members have the ability to provide
+                feedback and suggestions regarding their experiences at the fitness center. This feedback can be submitted
+                through the web application or in-person to Fitness Center Staff. Raptors Fitness management collects and
+                reviews this feedback regularly to improve services, address concerns, and make enhancements to the
+                fitness center's offerings. Additionally, members may receive responses or follow-up communications based
+                on their feedback to ensure a positive experience.
+            </li>
+        </ul>
+    </div>
+</section>
+
+    <!-- Requirements Scope Statements -->
+<section id="requirement-scope-statements">
+    <h2>2. REQUIREMENTS SCOPE STATEMENTS</h2>
+
+    <!-- HLRs Table -->
+    <table>
+        <thead>
+            <tr>
+                <th>HLR#</th>
+                <th>Description</th>
+                <th>Priority (H, M, L)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HLR01</td>
+                <td>Fitness Center Staff must conduct regular equipment checks and maintenance to ensure the safety
+                    and functionality of exercise machines and facilities.</td>
+                <td>H</td>
+            </tr>
+            <tr>
+                <td>HLR02</td>
+                <td>Cleaning and Maintenance Services must provide weekly reports on facility cleaning and maintenance
+                    activities, including equipment inspections and repairs.</td>
+                <td>M</td>
+            </tr>
+            <tr>
+                <td>HLR03</td>
+                <td>Fitness Class Instructors must follow a monthly schedule of classes, and the schedule should be
+                    accessible to members through the web application.</td>
+                <td>H</td>
+            </tr>
+            <tr>
+                <td>HLR04</td>
+                <td>Health and Safety Inspectors must conduct quarterly inspections, and any identified issues or
+                    recommendations should be addressed promptly by fitness center management.</td>
+                <td>H</td>
+            </tr>
+            <tr>
+                <td>HLR05</td>
+                <td>Fitness Center Staff should offer assistance and guidance to members, answering questions about
+                    equipment usage and providing information on fitness classes.</td>
+                <td>M</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+
+    <!-- HLR Sign-Off -->
+    <section id="hlr-sign-off">
+        <h2>3. HIGH LEVEL BUSINESS REQUIREMENTS SIGN-OFF</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Project Role</th>
+                    <th>Signature</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Said Mohamed</td>
+                    <td>Delegation</td>
+                    <td>Said</td>
+                    <td>11/02/2023</td>
+                </tr>
+                <tr>
+                    <td>Binye Liu</td>
+                    <td>Developer</td>
+                    <td>Binye</td>
+                    <td>11/02/2023</td>
+                </tr>
+                <tr>
+                    <td>Malik Adebiyi</td>
+                    <td>Developer</td>
+                    <td>Malik</td>
+                    <td>11/02/2023</td>
+                </tr>
+                <tr>
+                    <td>Connor Noonan</td>
+                    <td>Consultant</td>
+                    <td>Connor</td>
+                    <td>11/02/2023</td>
+                </tr>
+                <tr>
+                    <td>Zhou, Heng</td>
+                    <td>Developer</td>
+                    <td>Heng</td>
+                    <td>11/02/2023</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</body>
+
+</html>

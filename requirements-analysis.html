@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raptors Fitness Center Chatbot-Enabled Web App - Requirements Analysis</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Add your CSS file link if applicable -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h2 {
+            color: #004080;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+
+     <!-- Navigation Links -->
+    <nav>
+        <ul>
+            <li><a href="capstone.html">Capstone Directory</a></li>
+            <li><a href="project-summary.html">Project Summary</a></li>
+            <li><a href="project-requirements.html">Project/Business Requirements</a></li>
+            <li><a href="project-plan.html">Project Plan</a></li>
+            <li><a href="project-vision.html">Project Vision</a></li>
+            <li><a href="https://www.figma.com/file/ABbvMutsd9oex4mnQLYFVC/ChatBot-IO-Fitness-Web-App?type=design&node-id=3%3A342&mode=design&t=sEhaH3geC2gLp1Sa-1">Wireframes/Mock ups</a></li>
+            <li><a href="status-reports.html">Status Reports</a></li>
+            <li><a href="https://github.com/SaidnDone/Capstone_Raptors_Fitness">System Implementation</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Title Section -->
+    <header>
+        <h1>Raptors Fitness Center Chatbot-Enabled Web App - Requirements Analysis</h1>
+    </header>
+
+    <h2>Table of Contents</h2>
+    <ol>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#system">System Overview</a></li>
+        <li><a href="#functional-requirements">Functional Requirements</a></li>
+        <li><a href="#non-functional-requirements">Non Functional Requirements</a></li>
+        <li><a href="#logical-database-requirements">Logical Database Requirements</a></li>
+        <li><a href="#approval">Approval</a></li>
+    </ol>
+
+    <section id="introduction">
+        <h2>1.0 Introduction</h2>
+    <p>The Introduction section provides an overview of the system using software requirements analysis and design for the scope of the system.</p>
+
+    <!-- Purpose Subsection -->
+    <h3>1.1 Purpose</h3>
+    <p>This section provides an overview of the system using software requirements analysis and design for the scope of the system. The purpose of this document is to define the high-level software requirements for the Raptors Fitness Center Chatbot-Enabled Web App.</p>
+
+    <!-- Scope Subsection -->
+    <h3>1.2 Scope</h3>
+    <p>The scope of this document encompasses the high-level requirements analysis and design for the Raptors Fitness Center Chatbot-Enabled Web App project. It outlines the system's functional and non-functional requirements, helping to establish a framework for the system's development process.</p>
+    </section>
+
+    <!-- System Overview -->
+<section id="system">
+    <h2>2.0 System Overview</h2>
+    
+    <!-- Raptors Fitness Center Chatbot-Enabled Web App Description -->
+    <h3>2.1 Raptors Fitness Center Chatbot-Enabled Web App Description</h3>
+    <p>The Raptors Fitness Center Chatbot-Enabled Web App is intended to be a user-friendly, AI-powered fitness center web application that offers personalized guidance and recommendations to clients, enhancing their fitness journey experience. This document provides a foundational understanding of the project's context and requirements, focusing on the system's design and functionality.</p>
+
+    <!-- Project Perspective -->
+    <h3>2.2 Project Perspective</h3>
+    <p>The Raptors Fitness Center Chatbot-Enabled Web App is a self-contained system developed to address the lack of personalized fitness guidance and support in the fitness industry. It is designed to operate within the fitness center's organizational structure and improve the overall fitness journey experience for clients.</p>
+
+    <!-- System Context -->
+    <h3>2.3 System Context</h3>
+    <p>The system is situated within the business case of Raptors Fitness Center and addresses the strategic need for enhanced fitness services. It involves strategic issues related to fitness center services and aims to provide clients with personalized fitness guidance and recommendations.</p>
+
+    <!-- General Constraints -->
+    <h3>2.4 General Constraints</h3>
+    <p>The development of the software is constrained by budget limitations and the need for compatibility with common web browsers and mobile devices. Compliance with data privacy regulations, such as GDPR or HIPAA, must be maintained. Additionally, the system development should be completed within the specified timeframe, and the availability of third-party APIs for personalized workout plans and nutritional recommendations may be a constraint.</p>
+
+    <!-- Assumptions and Dependencies -->
+    <h3>2.5 Assumptions and Dependencies</h3>
+    <p>Several assumptions have been made during the project's initiation, including that users will have internet access for registration and login, users will provide accurate and valid information during the registration process, users will use the system to track their progress consistently, and data storage will comply with relevant data protection regulations.</p>
+</section>
+
+
+    <!-- Functional Requirements -->
+<section id="functional-requirements">
+    <h2>3.0 Functional Requirements</h2>
+
+    <!-- Chatbot Interaction Introduction -->
+    <h3>3.1.1 Chatbot Interaction Introduction:</h3>
+    <p>The chatbot interaction feature allows users to engage with a virtual fitness assistant through the web application.</p>
+    <h4>Inputs:</h4>
+    <ul>
+        <li>User-provided fitness goals, preferences, and health information.</li>
+        <li>User inquiries and requests.</li>
+    </ul>
+    <h4>Processing:</h4>
+    <p>The chatbot uses natural language processing (NLP) and AI-driven analysis modules to interpret and respond to user inputs.</p>
+    <p>Analyzes user-provided data to understand goals and preferences.</p>
+    <h4>Outputs:</h4>
+    <ul>
+        <li>Personalized fitness recommendations, exercise plans, and dietary guidance.</li>
+        <li>Real-time responses and guidance.</li>
+        <li>Progress tracking and monitoring.</li>
+    </ul>
+    
+
+    <!-- User Account Management Introduction -->
+    <h3>3.1.2 User Account Management Introduction:</h3>
+    <p>User account management facilitates user registration, login, and personalized user experiences.</p>
+    <h4>Inputs:</h4>
+    <ul>
+        <li>User registration details (e.g., name, email, age).</li>
+        <li>Login credentials.</li>
+    </ul>
+    <h4>Processing:</h4>
+    <p>User data validation and authentication.</p>
+    <p>User profile creation.</p>
+    <h4>Outputs:</h4>
+    <ul>
+        <li>User accounts with personalized settings.</li>
+        <li>Profile information storage.</li>
+        <li>Secure access to the web application.</li>
+    </ul>
+   
+
+    <!-- Use Cases -->
+    <h3>3.2 Use Cases</h3>
+
+    <!-- Use Case 1: User Registration and Onboarding -->
+    <h4>Use Case 1: User Registration and Onboarding</h4>
+    <p><strong>Actor:</strong> New User</p>
+    <p><strong>Description:</strong> This use case describes the process of a new user registering and onboarding onto the Chatbot Enabled Fitness Center Web App.</p>
+    
+
+    <!-- Use Case 2: Receiving Personalized Fitness Recommendations -->
+    <h4>Use Case 2: Receiving Personalized Fitness Recommendations</h4>
+    <p><strong>Actor:</strong> Registered User</p>
+    <p><strong>Description:</strong> This use case outlines the steps involved when a registered user interacts with the chatbot to receive personalized fitness recommendations.</p>
+   
+
+    <!-- Data Modelling and Analysis -->
+    <h3>3.3 Data Modelling and Analysis</h3>
+
+    <!-- Link to Normalized Data Model Diagram -->
+    <h4>Normalized Data Model Diagram</h4>
+
+    <img src="NDM-diagram.jpg" alt="NDM" width="700" height="400">
+
+    <!-- Placeholder for Image: Activity Diagrams -->
+    <h4>Activity Diagram</h4>
+
+    <img src="activity-diagram.jpg" alt="activity-diagram" width="700" height="400">
+
+    <!-- Placeholder for Image: Sequence Diagrams -->
+    <h4>Sequence Diagram</h4>
+
+    <img src="sequence-diagram.jpg" alt="sequence-diagram" width="700" height="400">
+
+    <!-- Placeholder for Image: UML Class Diagram -->
+    <h4> UML Class Diagram</h4>
+
+    <img src="UML-diagram.jpg" alt="UML-diagram" width="700" height="400">
+
+    <!-- Process Modelling -->
+    <h3>3.4 Process Modelling</h3>
+
+    <!-- Placeholder for Image: Data Flow Diagram -->
+    <h4>Data Flow Diagram</h4>
+    <img src="Dataflow-diagram.jpg" alt="Dataflow-diagram" width="700" height="400">
+</section>
+
+
+    <!-- Non-Functional Requirements -->
+<section id="non-functional-requirements">
+    <h2>4.0 Non-Functional Requirements</h2>
+
+    <!-- Performance -->
+    <h3>Performance:</h3>
+    <ul>
+        <li>The web application should respond to user interactions with minimal delay.</li>
+        <li>At least 95% of user interactions should be processed and responded to in less than 2 seconds.</li>
+        <li>Chatbot response time should not exceed 1 second for routine inquiries.</li>
+        <li>The system should handle concurrent users without significant performance degradation.</li>
+    </ul>
+
+    <!-- Reliability -->
+    <h3>Reliability:</h3>
+    <ul>
+        <li>The system should operate with high reliability to ensure continuous service availability.</li>
+        <li>System downtime may not exceed 1 minute per day for maintenance purposes.</li>
+        <li>Regular backups of user data and chatbot conversation history should be maintained to prevent data loss.</li>
+    </ul>
+
+    <!-- Availability -->
+    <h3>Availability:</h3>
+    <ul>
+        <li>The web application should be available 24/7, allowing users to access it at any time.</li>
+        <li>Availability should not be less than 99.9% uptime.</li>
+    </ul>
+
+    <!-- Security -->
+    <h3>Security:</h3>
+    <ul>
+        <li>User data, including personal information and health-related data, should be stored securely.</li>
+        <li>Compliance with data privacy regulations (e.g., GDPR) must be maintained.</li>
+        <li>User authentication and authorization should be in place to protect user accounts.</li>
+        <li>The system should have protection against common web application security vulnerabilities (e.g., SQL injection, cross-site scripting).</li>
+    </ul>
+
+    <!-- Maintainability -->
+    <h3>Maintainability:</h3>
+    <ul>
+        <li>The system should be designed with modular and maintainable code.</li>
+        <li>Regular updates and maintenance should be carried out to ensure system security and performance.</li>
+        <li>A change management process should be in place to handle updates and new feature additions while minimizing disruption to users.</li>
+    </ul>
+
+    <!-- Portability -->
+    <h3>Portability:</h3>
+    <ul>
+        <li>The web application should be accessible across common web browsers (e.g., Chrome, Firefox, Safari) without compatibility issues.</li>
+        <li>Users should be able to access the application on various devices, including desktops, laptops, tablets, and mobile phones, without functionality loss.</li>
+    </ul>
+</section>
+
+
+    <!-- Logical Database Requirements -->
+<section id="logical-database-requirements">
+    <h2>5.0 Logical Database Requirements</h2>
+
+    <p>In the development of the Raptors Fitness Center Chatbot-Enabled Web App, a database will be utilized to store and manage user data, chatbot conversation history, and other essential information. The logical database requirements are as follows:</p>
+
+    <!-- Data Formats -->
+    <h3>Data Formats:</h3>
+    <ul>
+        <li>The database should support various data formats, including text, numerical data, and binary data for storing user profiles, questionnaire responses, chatbot dialogues, and multimedia content.</li>
+    </ul>
+
+    <!-- Storage Capabilities -->
+    <h3>Storage Capabilities:</h3>
+    <ul>
+        <li>The database should have sufficient storage capacity to handle a growing user base and the associated data.</li>
+        <li>Data storage should be scalable to accommodate future data expansion.</li>
+    </ul>
+
+    <!-- Data Retention -->
+    <h3>Data Retention:</h3>
+    <ul>
+        <li>User data, including profile information and fitness-related data, should be retained for as long as the user maintains an account with the fitness center.</li>
+        <li>Historical chatbot conversation data will be retained to track user progress and provide personalized recommendations.</li>
+    </ul>
+
+    <!-- Data Integrity -->
+    <h3>Data Integrity:</h3>
+    <ul>
+        <li>Data integrity constraints should be implemented to ensure data accuracy, consistency, and reliability.</li>
+        <li>The database should support transaction management to maintain the integrity of data during concurrent operations.</li>
+    </ul>
+
+    <!-- Data Security -->
+    <h3>Data Security:</h3>
+    <ul>
+        <li>User data should be encrypted to protect sensitive information.</li>
+        <li>Access controls and user authentication should be implemented to prevent unauthorized access to the database.</li>
+        <li>Regular database backups should be performed to prevent data loss in case of system failures or errors.</li>
+    </ul>
+
+    <!-- Scalability -->
+    <h3>Scalability:</h3>
+    <ul>
+        <li>The database should be designed to handle an increasing amount of data as more users join the fitness center and use the web application.</li>
+        <li>The database should support horizontal scaling to distribute the data load efficiently.</li>
+    </ul>
+</section>
+
+
+   <!-- Approval Section -->
+<section id="approval">
+    <h2>7.0 Approval</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Project Role</th>
+                <th>Signature</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Said Mohamed</td>
+                <td>Delegation</td>
+                <td>Said</td>
+                <td>11/02/2023</td>
+            </tr>
+            <tr>
+                <td>Binye Liu</td>
+                <td>Developer</td>
+                <td>Binye</td>
+                <td>11/02/2023</td>
+            </tr>
+            <tr>
+                <td>Malik Adebiyi</td>
+                <td>Developer</td>
+                <td>Malik</td>
+                <td>11/02/2023</td>
+            </tr>
+            <tr>
+                <td>Connor Noonan</td>
+                <td>Consultant</td>
+                <td>Connor</td>
+                <td>11/02/2023</td>
+            </tr>
+            <tr>
+                <td>Zhou, Heng</td>
+                <td>Developer</td>
+                <td>Heng</td>
+                <td>11/02/2023</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Said Mohamed. All Rights Reserved.</p>
+</footer>
+
+</body>
+
+</html>
